@@ -1,0 +1,53 @@
+*{
+
+}
+body{
+    background-image: url('./image/school2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;    
+}
+
+.myform{
+    margin-top: 110px;
+text-align: center;
+font-size: 50px;
+border: black solid;
+margin-left: 450px;
+margin-right: 450px;
+margin-top: 150px;
+padding: 10px;
+background-color:antiquewhite;
+border-radius: 30px;
+font-family: 'Lato', sans-serif;
+
+}
+.btn{
+    background-color:#67B26F; /* Green */
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    /*margin:8px 0px;*/
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 90px;
+    height: 30px ; 
+    margin-top: 30px;
+    transition-duration: 0.4s;
+    border: black solid;
+    border-width:2px;
+}
+.btn:hover{
+background-color: white;
+color: black;
+
+}
+input[type=text], input[type=password]{
+padding: 10px;
+
+}
+

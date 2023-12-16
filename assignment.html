@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        .menu {
+        width: 200px;
+        }
+        
+        .menu a {
+        background-color: #eee;
+        color: black;
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+        }
+        
+        .menu a:hover {
+        background-color: #ab5757;
+        }
+        button{
+            margin: 30px;
+            background-color: #ab5757;
+        size: 20px;
+    }
+button:hover{
+    background-color:blueviolet;
+cursor: pointer;
+}
+.colum{
+    width: 25%;
+    height: 100%;
+    float: left;
+    display: block;
+}
+.row::after{
+content: "";
+display: table;
+clear: both;
+
+}
+
+
+@media(min-width:600) {
+    body{
+        background-color: aquamarine;
+        color: #eee;
+    }
+}
+@media screen and (max-width:992px){
+    .colum{
+        width:50%;
+    }
+}
+@media screen and (max-width:600px){
+    .colum{
+        width:100%;
+    }
+}
+
+        </style>
+</head>
+<body>
+
+<div class="menu">
+<a href="#">Home</a>
+<a href="#">About Us</a>
+<a href="#">contact us</a>
+</div>
+
+<div class="btn">
+    <button>Okey</button>
+</div>
+<div class="row">
+<div class="colum">
+<div class="colum1" style="background-color: gray;">
+    <p>col1</p>
+</div>
+
+<div class="colum2" style="background-color: gray;">
+    <p>col2</p>
+</div>
+
+<div class="colum3" style="background-color: gray;">
+    <p>col3</p>
+</div>
+<div class="colum4" style="background-color: gray;">
+    <p>col4</p>
+</div>
+</div>
+</div>
+</body>
+</html>

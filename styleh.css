@@ -1,0 +1,258 @@
+
+*{
+    box-sizing: border-box;
+
+    padding: 0;
+    margin: 0;
+}
+.container1{
+
+    width:100%;
+    background-position: center;
+    background-size: cover; 
+}
+
+.navbar{
+
+    width:85%;
+    margin:0px;
+    padding:10px 0;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    
+}
+.navbar ul li{
+
+    list-style: none;
+    display: inline-block;
+    margin:0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:black;
+    text-transform: uppercase;
+
+    
+}
+.navbar ul li::after{
+    
+    content: '';
+    height:3px;
+    width:0%;
+    background:black;
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    transition:0.5s;
+}
+.navbar ul li:hover::after{
+
+    width:100%; 
+}
+.top{
+
+    width:100%;
+    height:40px;
+    background: -webkit-linear-gradient(to right , #ffffff, #fadfba);
+    background:linear-gradient(to right , #ffffff, #fadfba);
+}
+body{
+
+    margin-top: 2%;
+    height: 1000px;
+background-image: url('image/ss.jpg');
+background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;   
+
+}
+
+.container2{
+    margin-top: 400px;
+    background: -webkit-linear-gradient(to right,beige, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, beige, #67B26F); 
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+
+    background-color: white;
+    width: 270px;
+    margin:60px;
+    border-radius: 15px;
+    
+}
+.card-image{
+
+    background-color: aqua;
+    height: 200px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.car-1{
+
+    background-image: url('image/bio.jpg');
+}
+.car-2{
+
+    background-image: url('image/chemi.jpg');
+}
+.car-3{
+
+    background-image: url('image/geog.jpg');
+}
+.car-4{
+
+    background-image: url('image/histojpg.jpg');
+}
+.car-5{
+
+    background-image: url('image/math.jpg');
+}
+.car-6{
+
+    background-image: url('image/phys.jpg');
+}
+.card p{
+
+    padding: 10px;
+}
+
+.card a{
+    background:linear-gradient(to right , #ffffff, #fadfba);
+    color: white;
+    padding:15px 20px;
+    display: block;
+    text-align: center;
+    margin:20px 50px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.card:hover{
+    background:linear-gradient(to right , #ffffff, #fadfba);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition:all 1s ease;
+}
+#vid{
+    position: relative;
+    float: left;
+    width: 408px;
+    height: 320px;
+    margin-left: 10px;
+}
+iframe{
+    border: 4px solid;
+}
+p{
+    margin-left: 10px;
+    font-size:x-large;
+    padding: 1px;
+    color:black;
+}
+
+footer{
+    background-color:#111;
+    
+    }
+    
+    .footerContainer{
+        width:100%;
+    padding:70px 30px 20px;
+    }
+    .socialIcons{
+    
+        display:flex;
+        justify-content: center;
+    }
+    
+    .socialIcons a {
+    
+        text-decoration: none;
+        padding: 10px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 50%;
+    }
+    
+    .socialIcons a i{
+    
+        font-size: 2em;
+        color:black;
+        opacity: 0.9;   
+    }
+    
+    .socialIcons a:hover{
+
+        background-color: #111;
+        transition: 0.5s;
+    }
+    .socialIcons a:hover i{
+    
+        color:white;
+        transition: 0.5s;
+    }
+    
+    .footerNav{
+    
+        margin: 30px 0;
+    }
+    
+    .footerNav ul{
+    
+        display: flex;
+        justify-content: center;
+        list-style-type: nonedisc;
+    }
+    
+    .footerNav ul li a{
+    
+        color:white;
+        margin:20px;
+        text-decoration: none;
+        font-size: 1.3em;
+        opacity: 0.7;
+        transition: 0.5s;  
+    }
+    .footerNav ul li a:hover{
+
+        opacity:1;  
+    }
+    
+    .footerBottom{
+    width: 100%;
+        background-color: #000;
+        padding: 20px;
+        text-align: center;
+    }
+    .footerBottom p{
+        color: white;   
+    }
+    
+    .designer{
+    
+        opacity: 0.7;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin: 0px 5px;
+    }
+    @media (max-width: 700px){
+        .footerNav ul{
+            flex-direction: column;
+        }
+        .footerNav ul li{
+    
+            width:100%;
+            text-align: center;
+            margin: 10px;
+    }
+    
+    }

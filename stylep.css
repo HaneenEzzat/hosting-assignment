@@ -1,0 +1,93 @@
+
+*{
+    
+    padding:0;
+    margin: 0;
+}
+.container1{
+
+    width:100%;
+    background-position: center;
+    background-size: cover; 
+}
+
+.navbar{
+
+    width:85%;
+    margin:0px;
+    padding:10px 0;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    
+}
+.navbar ul li{
+
+    list-style: none;
+    display: inline-block;
+    margin:0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:black;
+    text-transform: uppercase;
+
+    
+}
+.navbar ul li::after{
+    
+    content: '';
+    height:3px;
+    width:0%;
+    background:black;
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    transition:0.5s;
+}
+.navbar ul li:hover::after{
+
+    width:100%; 
+}
+.top{
+
+    width:100%;
+    height:40px;
+    background:linear-gradient(to right , #ffffff, #fadfba);
+}
+
+body {
+    background:antiquewhite;  
+    background: -webkit-linear-gradient(to right,beige, #67B26F);  
+    background: linear-gradient(to right, beige, #67B26F); 
+    padding: 0;
+    margin-top: 250px;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+}
+.student-profile .card {
+    border-radius: 10px;    
+}
+.student-profile .card .card-header .profile_img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    
+    border: 10px solid #ccc;
+    border-radius: 50%;
+}
+.student-profile .card h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+.student-profile .card p {
+    font-size: 16px;
+    color: #000;
+}
+.student-profile .table th,
+.student-profile .table td {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #000;
+}
